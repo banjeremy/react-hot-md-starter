@@ -12,7 +12,7 @@ import {
 
 const routes = (
   <Route path="/" component={App}>
-    <IndexRoute component={requireAuth(HomeView)} />
+    <IndexRoute component={HomeView} />
     <Route path="/login" component={LoginView} />
     <Route path="/protected" component={requireAuth(ProtectedView)} />
   </Route>

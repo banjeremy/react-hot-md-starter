@@ -1,8 +1,9 @@
 import React from 'react';
+import { title, html } from './index.md';
 
 const HomeView = () => (
   <div className="container">
-    <div className="row">Home</div>
+    <div dangerouslySetInnerHTML={{ __html: html }} />
   </div>
 );
 

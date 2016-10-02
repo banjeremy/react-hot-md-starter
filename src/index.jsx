@@ -4,6 +4,7 @@ import { browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
+import 'highlight.js/styles/github.css';
 import createStore from './redux/create';
 import routes from './routes';
 import Root from './Root';
@@ -11,7 +12,6 @@ import './index.css';
 
 const store = createStore(browserHistory);
 const history = syncHistoryWithStore(browserHistory, store);
-
 
 const rootEl = document.getElementById('root');
 

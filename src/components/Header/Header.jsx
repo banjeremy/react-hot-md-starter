@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { Link } from 'components';
+import { Link } from 'react-router';
 import './header.css';
 
 function isActive(link, currentPath) {
@@ -28,21 +28,21 @@ const Header = ({
           <span className="icon-bar" />
           <span className="icon-bar" />
         </button>
-        {/* <Link to="/" className="navbar-brand">
+        <Link to="/" className="navbar-brand">
           Demo
-        </Link> */}
+        </Link>
       </div>
       <div id="navbar" className="navbar-collapse collapse">
-        {/* <ul className="nav navbar-nav">
+        <ul className="nav navbar-nav">
           <li className={isActive(currentPath, '/protected')}>
-            <Link to="/protected">Users</Link>
+            <Link to="/protected">Protected</Link>
           </li>
-        </ul> */}
-        {/* <ul className="nav navbar-nav navbar-right">
+        </ul>
+        <ul className="nav navbar-nav navbar-right">
           {isAuthenticated === false
             ? <li className={isActive(currentPath, '/login')}><Link to="/login">Login</Link></li>
             : <li><Link to="/login" onClick={onLogout}>Logout</Link></li>}
-        </ul> */}
+        </ul>
       </div>
     </div>
   </nav>

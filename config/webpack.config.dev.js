@@ -125,6 +125,10 @@ module.exports = {
         test: /\.json$/,
         loader: 'json'
       },
+      {
+        test: /\.md$/,
+        loader: path.resolve(__dirname, './loaders/markdown-loader.js'),
+      },
       // "file" loader makes sure those assets get served by WebpackDevServer.
       // When you `import` an asset, you get its (virtual) filename.
       // In production, they would get copied to the `build` folder.
