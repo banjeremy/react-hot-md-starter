@@ -1,0 +1,18 @@
+.login-view {
+  .login-form {
+    max-width: 330px;
+    margin: 0 auto;
+
+    input {
+      margin: 12px 0;
+    }
+
+    .form-login-heading {
+      text-align: center;
+    }
+
+    .btn {
+      margin-top: 25px;
+    }
+  }
+}

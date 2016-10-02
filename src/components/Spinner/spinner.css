@@ -1,0 +1,16 @@
+@keyframes spin {
+  0% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(360deg); }
+}
+
+.spinner {
+  height: 32px;
+  text-align: center;
+  margin: 20px;
+  font-size: 32px;
+  line-height: 32px;
+
+  .spin {
+    animation: spin 1s linear infinite;
+  }
+}
