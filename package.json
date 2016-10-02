@@ -1,5 +1,5 @@
 {
-  "name": "built-docs",
+  "name": "react-doc-starter",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
